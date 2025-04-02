@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 @tailwind base;
@@ -12,6 +12,17 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+@layer utilities {
+  .bg-gradient-custom {
+    background-image: linear-gradient(
+      to right,
+      theme('colors.indigo.400'),
+      theme('colors.indigo.100'),
+      theme('colors.sky.400'),
+      theme('colors.fuchsia.400')
+    );
+  }
 }
 
 @theme inline {

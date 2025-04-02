@@ -1,6 +1,6 @@
-import { useSprings, animated, SpringConfig } from "@react-spring/web";
-import { useEffect, useRef, useState } from "react";
-import ShapeBlur from "./ShapeBlur";
+import { useSprings, animated, SpringConfig } from '@react-spring/web';
+import { useEffect, useRef, useState } from 'react';
+import ShapeBlur from './ShapeBlur';
 
 interface SplitTextProps {
   text?: string;
@@ -8,26 +8,26 @@ interface SplitTextProps {
   delay?: number;
   animationFrom?: { opacity: number; transform: string };
   animationTo?: { opacity: number; transform: string };
-  easing?: SpringConfig["easing"];
+  easing?: SpringConfig['easing'];
   threshold?: number;
   rootMargin?: string;
-  textAlign?: "left" | "right" | "center" | "justify" | "start" | "end";
+  textAlign?: 'left' | 'right' | 'center' | 'justify' | 'start' | 'end';
   onLetterAnimationComplete?: () => void;
 }
 
 const SplitText: React.FC<SplitTextProps> = ({
-  text = "Marissa Lamothe, Full Stack Developer",
-  className = "text-6xl font-bold text-center text-gray-700 font-josefin-sans",
+  text = 'Marissa Lamothe, Full Stack Developer',
+  className = 'text-6xl font-bold text-center text-amber-400 font-josefin-sans',
   delay = 100,
-  animationFrom = { opacity: 0, transform: "translate3d(0,40px,0)" },
-  animationTo = { opacity: 1, transform: "translate3d(0,0,0)" },
+  animationFrom = { opacity: 0, transform: 'translate3d(0,40px,0)' },
+  animationTo = { opacity: 1, transform: 'translate3d(0,0,0)' },
   easing = (t: number) => t,
   threshold = 0.1,
-  rootMargin = "-100px",
-  textAlign = "center",
+  rootMargin = '-100px',
+  textAlign = 'center',
   onLetterAnimationComplete,
 }) => {
-  const words = text.split(" ").map((word) => word.split(""));
+  const words = text.split(' ').map((word) => word.split(''));
   const letters = words.flat();
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLParagraphElement>(null);
@@ -78,12 +78,12 @@ const SplitText: React.FC<SplitTextProps> = ({
     <p
       ref={ref}
       className={`split-parent overflow-hidden inline ${className}`}
-      style={{ textAlign, whiteSpace: "normal", wordWrap: "break-word" }}
+      style={{ textAlign, whiteSpace: 'normal', wordWrap: 'break-word' }}
     >
       {words.map((word, wordIndex) => (
         <span
           key={wordIndex}
-          style={{ display: "inline-block", whiteSpace: "nowrap" }}
+          style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
         >
           {word.map((letter, letterIndex) => {
             const index =
@@ -100,7 +100,7 @@ const SplitText: React.FC<SplitTextProps> = ({
               </animated.span>
             );
           })}
-          <span style={{ display: "inline-block", width: "0.3em" }}>
+          <span style={{ display: 'inline-block', width: '0.3em' }}>
             &nbsp;
           </span>
         </span>
@@ -110,16 +110,16 @@ const SplitText: React.FC<SplitTextProps> = ({
 };
 
 const Hero = () => {
-    return (
-      <div className="relative h-screen w-screen">
-        <div className="absolute inset-0 flex items-center justify-center bg-black">
-          <SplitText />
-        </div>
-        <div className="absolute inset-0 z-10">
-          <ShapeBlur className="flex items-center justify-center h-screen bg-transparent"/>
-        </div>
+  return (
+    <div className="relative h-screen w-screen">
+      <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+        <SplitText />
       </div>
-    );
-  };
-  
-  export default Hero;
+      <div className="absolute inset-0 z-10">
+        <ShapeBlur className="flex items-center justify-center h-screen bg-transparent" />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

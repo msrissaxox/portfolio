@@ -1,10 +1,13 @@
+/*
+	Installed from https://reactbits.dev/ts/tailwind/
+*/
+
 import type { SpringOptions } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
-import Image from 'next/image';
 
 interface TiltedCardProps {
-  imageSrc: string;
+  imageSrc: React.ComponentProps<'img'>['src'];
   altText?: string;
   captionText?: string;
   containerHeight?: React.CSSProperties['height'];
@@ -15,7 +18,7 @@ interface TiltedCardProps {
   rotateAmplitude?: number;
   showMobileWarning?: boolean;
   showTooltip?: boolean;
-  overlayContent?: string;
+  overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
 }
 
@@ -26,7 +29,7 @@ const springValues: SpringOptions = {
 };
 
 export default function TiltedCard({
-  imageSrc = '/marissa.jpg',
+  imageSrc,
   altText = 'Tilted card image',
   captionText = '',
   containerHeight = '300px',
@@ -36,8 +39,8 @@ export default function TiltedCard({
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
-  showTooltip = false,
-  overlayContent = 'content',
+  showTooltip = true,
+  overlayContent = null,
   displayOverlayContent = false,
 }: TiltedCardProps) {
   const ref = useRef<HTMLElement>(null);
@@ -92,7 +95,7 @@ export default function TiltedCard({
   return (
     <figure
       ref={ref}
-      className="relative w-full h-full flex flex-col [perspective:800px items-center justify-center"
+      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
       style={{
         height: containerHeight,
         width: containerWidth,
