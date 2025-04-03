@@ -18,11 +18,11 @@ export default function NavBar() {
     </div>
     <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
       <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-        <a className="font-medium text-blue-500 focus:outline-hidden" href="#" aria-current="page">Landing</a>
-        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#">Projects</a>
-        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#">Contact</a>
+        <a className="font-medium text-red-500 focus:outline-hidden" href="#" aria-current="page">Home</a>
+        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#works">Works</a>
         <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#">Resume</a>
         <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#">JavaScript Course</a>
+        <a className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400" href="#">Contact Me</a>
       </div>
     </div>
   </nav>
