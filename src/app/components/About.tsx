@@ -1,8 +1,8 @@
 import React from 'react';
 // import AboutContent from './hero/AboutContent.jsx';
-// import TechStack from './components/TechStack.jsx';
+import TechStack from './TechStack.tsx';
 
-// import TechStackHeader from './TechStackHeader.tsx';
+import TechStackHeader from './TechStackHeader.tsx';
 
 export default function Page() {
   return (
@@ -11,12 +11,12 @@ export default function Page() {
  
       </div>
       <div className="rounded lg:col-span-2 px-10">
-
+      <TechStackHeader />
+      <TechStack />
         {/* <AboutContent /> */}
       </div>
       <div className="rounded">
-        {/* <TechStackHeader />
-        <TechStack /> */}
+
       </div>
     </div>
   );

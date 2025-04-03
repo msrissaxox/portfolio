@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 import Hero from './components/Hero';
 import TiltedCard from './components/Card';
@@ -18,10 +19,10 @@ export default function Page() {
         <ProjectsHeader />
         <div className="mt-10 py-4 columns-3">
           <div className="flex flex-wrap justify-center gap-8">
-            <TiltedCard />
-            <TiltedCard />
-            <TiltedCard />
-            <TiltedCard />
+            <TiltedCard imageSrc='/blog.gif'/>
+            <TiltedCard imageSrc='/starbrew.gif'/>
+            <TiltedCard imageSrc='/linkedin.gif'/>
+            <TiltedCard imageSrc='/fruitfinder.gif'/>
             <TiltedCard />
             <TiltedCard />
           </div>
