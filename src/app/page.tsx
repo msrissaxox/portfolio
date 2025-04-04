@@ -1,13 +1,15 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-
-import Hero from './components/Hero';
-import TiltedCard from './components/Card';
-import About from './components/About';
-import ProjectsHeader from './components/ProjectsHeader';
+import ProjectsHeader from './components/TechStackandActivities/ProjectsHeader';
+import Works from './components/TechStackandActivities/Works';
 import HeroLayout from './components/hero/HeroLayout';
-import NavBar from './components/nav/NavBar';
+import NavBar from './components/nav/NavBar'; // Corrected import
+import TechStack from './components/TechStackandActivities/TechStack';
+import TechStackHeader from './components/TechStackandActivities/TechStackHeader';
+import MemberHeader from './components/TechStackandActivities/MemberHeader';
+import MemberBody from './components/TechStackandActivities/MemberBody';
+import Footer from './components/nav/footer/Footer';
 
 export default function Page() {
   return (
@@ -15,18 +17,17 @@ export default function Page() {
       <div className="bg-gray-100">
         <NavBar />
         <HeroLayout />
-        <About />
+        <div className="grid grid-rows-3 grid-flow-col gap-4 px-4 py-4 leading-10">
+    <div className="p-4 w-full  rounded-xl row-span-3">
+<TechStackHeader />
+<TechStack />
+    </div>
+    <div className="p-4 w-full rounded-xl col-span-2"><MemberHeader /></div>
+    <div className="p-4 w-full  rounded-xl row-span-2 col-span-2"><MemberBody /></div>
+</div>
         <ProjectsHeader />
-        <div className="mt-10 py-4 columns-3">
-          <div className="flex flex-wrap justify-center gap-8">
-            <TiltedCard imageSrc='/blog.gif'/>
-            <TiltedCard imageSrc='/starbrew.gif'/>
-            <TiltedCard imageSrc='/linkedin.gif'/>
-            <TiltedCard imageSrc='/fruitfinder.gif'/>
-            <TiltedCard />
-            <TiltedCard />
-          </div>
-        </div>
+        <Works />
+      <Footer />
       </div>
     </div>
   );

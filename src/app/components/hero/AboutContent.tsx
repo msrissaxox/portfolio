@@ -20,7 +20,7 @@ export default function AboutContent() {
 
     I'm currently channeling my teaching background into
     building a <b>JavaScript course</b> to help others discover the power and
-    possibilities of programming. If you'd like to learn more about this course, click here. 
+    possibilities of programming. If you'd like to learn more about this course, <b>click here</b>. 
     This project combines my love for education with my technical expertise. 
 
     When I'm not coding, you'll find me exploring Orlando's vibrant art scene, 

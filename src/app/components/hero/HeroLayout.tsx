@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+
+import HeroTitle from './HeroTitle';
 import AboutContent from './AboutContent';
 import Button from './Button';
-import HeroTitle from './HeroTitle';
-import Picture from '../Picture';
+import Picture from './Picture';
 
 export default function HeroLayout() {
   return (
@@ -12,12 +13,13 @@ export default function HeroLayout() {
         <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
           <div>
             <HeroTitle />
-          <AboutContent />
+            <AboutContent />
             <Button />
           </div>
           <div className="flex justify-center">
             <Picture />
           </div>
+          
         </div>
       </div>
     </div>
