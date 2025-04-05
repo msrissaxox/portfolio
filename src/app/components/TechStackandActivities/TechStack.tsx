@@ -52,6 +52,9 @@ export default function TechStack() {
           <div className="flex flex-col items-center">
             <p>AWS</p>
           </div>
+          <div className="flex flex-col items-center">
+            <p>Git, GitHub</p>
+          </div>
         </div>
       </div>
     </div>
