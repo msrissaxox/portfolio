@@ -45,3 +45,7 @@ body {
   font-family: josefin sans;
   /* height: 75vh; */
 }
+
+html {
+  scroll-behavior: smooth;
+}

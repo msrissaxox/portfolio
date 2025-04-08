@@ -35,7 +35,7 @@ export default function Page() {
           </div>
         </div>
         <ProjectsHeader />
-        <Works />
+        <Works id="works"/>
         <Footer authorName={'Marissa Lamothe'} />
       </div>
     </div>

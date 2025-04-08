@@ -2,15 +2,20 @@
 import Image from "next/image";
 import React from "react";
 import TiltedCard from "../Card";
+import { section } from "framer-motion/client";
 
 export default function Works() {
   return (
-<div className="mt-10 py-4 columns-3">
-          <div className="flex flex-wrap justify-center gap-8">
-            <TiltedCard imageSrc="/blog.gif" overlayContent="BackBook Blogs"/>
-            <TiltedCard imageSrc="/starbrew.gif" overlayContent="StarBrew Coffee" />
-            <TiltedCard imageSrc="/linkedin.gif" overlayContent="LinkedIn AI Post Generator"/>
-            <TiltedCard imageSrc="/fruitfinder.gif" overlayContent="Fruit Finder API" />
+   
+ <div className="mt-10 py-4">
+
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+{/* <div className="flex flex-wrap justify-center gap-8"> */}
+            <a href="https://main.diuc138417s4b.amplifyapp.com/" target="_blank"><TiltedCard imageSrc="/blog.gif" overlayContent="BackBook Blogs"/></a>
+            <a href="https://starbrew.vercel.app/" target="_blank"><TiltedCard imageSrc="/starbrew.gif" overlayContent="StarBrew Coffee" /></a>
+            <a href="https://linkedinpostgen-1.vercel.app/" target="_blank"><TiltedCard imageSrc="/linkedin.gif" overlayContent="LinkedIn AI Post Generator"/></a>
+            <a href="https://fruits-frontend-rose.vercel.app/" target="_blank"><TiltedCard imageSrc="/fruitfinder.gif" overlayContent="Fruit Finder API" /> </a>
             <TiltedCard />
             <TiltedCard />
           </div>
