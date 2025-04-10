@@ -1,6 +1,8 @@
 'use client';
 
+import { easeIn } from 'framer-motion';
 import React, { useState } from 'react';
+import { transition } from 'three/examples/jsm/tsl/display/TransitionNode.js';
 
 
 
@@ -9,6 +11,7 @@ const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
     console.log('clicked');
+    // Toggle the state
     setIsOpen(!isOpen);
   }
 
@@ -17,7 +20,7 @@ const [isOpen, setIsOpen] = useState(false);
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
     <div className="flex items-center justify-between">
       <a className="flex-none text-xl font-semibold focus:outline-hidden focus:opacity-80" href="#" aria-label="Marissa Lamothe Portfolio">
-        Marissa Lamothe
+        Marissa Lamothe - Full Stack Developer
       </a>
 
       <div className="sm:hidden">
@@ -38,11 +41,13 @@ const [isOpen, setIsOpen] = useState(false);
       </div>
     </div>
 
- <div id="hs-navbar-example" 
-    className= {`${isOpen ? 'block' : 'hidden'}
-     hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block`}
-    aria-labelledby="hs-navbar-example-collapse">
-
+<div
+  id="hs-navbar-example"
+  className={`overflow-hidden transition-[max-height] duration-300 ease-in-out sm:block ${
+    isOpen ? 'max-h-96' : 'hidden'
+  }`}
+  aria-labelledby="hs-navbar-example-collapse"
+>
 
       <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
         <a className="font-medium text-red-500 focus:outline-hidden" href="#" aria-current="page">Home</a>

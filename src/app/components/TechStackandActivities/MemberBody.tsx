@@ -11,7 +11,8 @@ export default function TechStackHeader() {
         'OrlandoJS',
         'Black Orlando Tech',
         'Orlando Devs Hackathon',
-        'Girl Develop It Mentorship Program'
+        'Girl Develop It Mentorship Program',
+        'Brilliant Black Minds'
       ]
         .map((activity, index) => (
           <div key={index} className='flex flex-col items-center'>

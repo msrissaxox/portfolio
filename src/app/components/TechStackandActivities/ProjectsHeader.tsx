@@ -5,7 +5,7 @@ export default function ProjectsHeader() {
     <section id="works">
     <div>
       
-<h1 className="mb-2 text-5xl font-bold text-black text-center">works</h1>
+<h1 className="mb-2  pt-10 text-5xl font-bold text-black text-center">works</h1>
 </div>
 </section>
   );
