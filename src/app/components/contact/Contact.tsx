@@ -1,14 +1,14 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form"
-
+import emailjs from '@emailjs/browser';
 
 type Inputs = {
   firstName: string
   lastName: string
   message: string
   email: string
-  exampleRequired: string
-  example: string
+  // exampleRequired: string
+  // example: string
 }
 
 
@@ -18,8 +18,14 @@ export default function Contact() {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
-
+  const onSubmit: SubmitHandler<Inputs> = (data) => 
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      data,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    )
+    ;
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
@@ -33,13 +39,13 @@ export default function Contact() {
     <label>Email: </label>
     <input {...register("email", {required: 'Email Address is required'})}  />
     <label>Message: </label>
-    <input {...register("message")} placeholder="Let's work together." />
+    <input {...register("message", {required:'This is required'})} placeholder="Let's work together." />
 
 
       {/* include validation with required or other standard HTML validation rules */}
       {/* <input {...register("exampleRequired", { required: true })} /> */}
       {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
+      {/* {errors.exampleRequired && <span>This field is required</span>} */}
 
 
       <input type="submit" />
