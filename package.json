@@ -10,6 +10,9 @@
     "lint": "next lint",
     "format": "prettier --write ."
   },
+  "engines": {
+    "node": ">=18.19.0"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.2.0",
