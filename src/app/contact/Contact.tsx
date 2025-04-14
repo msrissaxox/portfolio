@@ -36,6 +36,10 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          alert(
+            'Thank you for your message! I will get back to you as soon as possible.'
+          );
+          reset();
         },
         (error) => {
           console.log(error.text);
