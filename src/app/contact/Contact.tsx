@@ -66,7 +66,7 @@ export default function Contact() {
           <input
             {...register('firstName', { required: 'This is required' })}
             placeholder="Marissa"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border text-gray-400 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-800 focus:border-green-800"
           />
         </div>
 
@@ -92,8 +92,8 @@ export default function Contact() {
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           />
           {errors.email && (
-    <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-  )}
+            <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+          )}
         </div>
 
         <div>
