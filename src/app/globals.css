@@ -34,8 +34,13 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    color: #171717; /* Darker font color for mobile view */
   }
 }
 
@@ -60,7 +65,9 @@ html {
     opacity: 1;
   }
 }
-
+footer {
+  color: #171717; /* Dark font color */
+}
 .menu.open {
   opacity: 1;
   transform: translateY(0);
