@@ -5,8 +5,7 @@ export default function TechStack() {
   return (
     <div className="px-4 py-6">
       <div className="flex justify-center items-center h-full">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 sm:gap-4 md:gap-6 lg:gap-8 gap-14">
-         
+        <div className="grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 sm:gap-8 md:gap-8 lg:gap-10">
           {[
             'JavaScript',
             'Node.js',
@@ -20,7 +19,7 @@ export default function TechStack() {
             'Vercel',
             'Netlify',
             'AWS',
-            'Git', 
+            'Git',
             'GitHub',
           ].map((tech, index) => (
             <div key={index} className="flex flex-col items-center">
@@ -30,6 +29,5 @@ export default function TechStack() {
         </div>
       </div>
     </div>
-
   );
 }

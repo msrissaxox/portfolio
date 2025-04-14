@@ -9,29 +9,32 @@ import TechStackHeader from './components/TechStackandActivities/TechStackHeader
 import MemberHeader from './components/TechStackandActivities/MemberHeader';
 import MemberBody from './components/TechStackandActivities/MemberBody';
 import Footer from './components/nav/footer/Footer';
-
-import Contact from './components/contact/Contact';
+import Contact from './contact/Contact';
 
 export default function Page() {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="bg-gray-100">
         <NavBar />
-        <HeroLayout/>
-        <div className="grid grid-rows-3 grid-flow-col gap-4 px-4 py-4 leading-10">
+        <HeroLayout />
 
-          <div className="p-4 w-full rounded-xl row-span-3 bg-white shadow-lg border border-gray-200 relative overflow-hidden">
+        {/* Replace this with a responsive grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-4">
+          {/* Tech Stack Section */}
+          <div className="p-4 w-full rounded-xl bg-white shadow-lg border border-gray-200 relative overflow-hidden">
             {/* Decorative background element */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 -z-10"></div>
-            <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
-            
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 -z-10">
+              test
+            </div>
+            <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20 -mr-20 -mt-20">
+              test
+            </div>
             <TechStackHeader />
             <TechStack />
           </div>
-    
 
-          {/* Member Body Section - Bottom right */}
-          <div className="p-4 w-full rounded-xl row-span-3 col-span-2 bg-white shadow-lg border border-gray-200 relative overflow-hidden">
+          {/* Member Body Section */}
+          <div className="p-4 w-full rounded-xl bg-white shadow-lg border border-gray-200 relative overflow-hidden">
             <MemberHeader />
             {/* Gradient accent */}
             <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-40 -z-10"></div>
@@ -39,10 +42,10 @@ export default function Page() {
             <MemberBody />
           </div>
         </div>
+
         <ProjectsHeader />
         <Works />
         <Footer authorName={'Marissa Lamothe'} />
-        <Contact />
       </div>
     </div>
   );

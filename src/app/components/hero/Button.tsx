@@ -2,7 +2,7 @@ import React from 'react';
 export default function Button() {
   return (
     <div className="flex justify-center w-full space-x-5">
-      <button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-red-500 text-amber-100 p-5 py-3 font-semibold">
+      <button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-green-700 text-amber-100 p-5 py-3 font-semibold">
         Download Resume
         <svg
           xmlns="http://www.w3.org/2000/svg"
