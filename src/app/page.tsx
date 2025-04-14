@@ -9,7 +9,7 @@ import TechStackHeader from './components/TechStackandActivities/TechStackHeader
 import MemberHeader from './components/TechStackandActivities/MemberHeader';
 import MemberBody from './components/TechStackandActivities/MemberBody';
 import Footer from './components/nav/footer/Footer';
-import Contact from './contact/Contact';
+
 
 export default function Page() {
   return (

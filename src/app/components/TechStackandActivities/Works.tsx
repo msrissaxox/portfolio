@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import React from 'react';
 import TiltedCard from '../Card';
 import { section } from 'framer-motion/client';

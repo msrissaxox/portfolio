@@ -17,13 +17,13 @@ export default function NavBar() {
     <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
-          <a
+          <Link
             className="flex-none text-xl font-semibold focus:outline-hidden focus:opacity-80"
             href="/"
             aria-label="Marissa Lamothe Portfolio"
           >
             Marissa Lamothe - Full Stack Developer
-          </a>
+          </Link>
 
           <div className="sm:hidden">
             <button
@@ -80,25 +80,25 @@ export default function NavBar() {
           aria-labelledby="hs-navbar-example-collapse"
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-            <a
+            <Link
               className="font-medium text-green-700 focus:outline-hidden"
               href="/"
               aria-current="page"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
               href="/#works"
             >
               Works
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
               href="#"
             >
               Resume
-            </a>
+            </Link>
             <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
               href="/contact"
