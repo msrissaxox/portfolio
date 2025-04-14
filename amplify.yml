@@ -3,8 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 18.19.0
-        - nvm use 18.19.0
+        - nvm install 18
+        - nvm use 18
         - npm ci
     build:
       commands:
@@ -16,3 +16,4 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+      - .next/cache

@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import TiltedCard from '../Card';
-import { section } from 'framer-motion/client';
 
 export default function Works() {
   return (

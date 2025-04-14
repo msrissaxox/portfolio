@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import './flipcard.css'; // Import the CSS file for styles
 

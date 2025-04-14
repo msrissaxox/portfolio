@@ -16,13 +16,13 @@ export default function AboutContent() {
         potential in web development. One of my recent projects, the{' '}
         <b>LinkedIn Post Generator</b>, showcases how I leveraged <b>OpenAI</b>{' '}
         to automate content creation, demonstrating my ability to integrate
-        AI-driven solutions into my work. I'm currently channeling my teaching
+        AI-driven solutions into my work. I&apos;m currently channeling my teaching
         background into building a <b>JavaScript course</b> to help others
-        discover the power and possibilities of programming. If you'd like to
+        discover the power and possibilities of programming. If you&apos;d like to
         learn more about this course, <b>click here</b>. This project combines
-        my love for education with my technical expertise. When I'm not coding,
-        you'll find me exploring Orlando's vibrant art scene, working out, or
-        reading. Let's build something amazing <b>together</b>.
+        my love for education with my technical expertise. When I&apos;m not coding,
+        you&apos;ll find me exploring Orlando&apos;s vibrant art scene, working out, or
+        reading. Let&apos;s build something amazing <b>together</b>.
       </p>
     </div>
   );

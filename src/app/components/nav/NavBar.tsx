@@ -1,6 +1,5 @@
 'use client';
 
-import { easeIn } from 'framer-motion';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
