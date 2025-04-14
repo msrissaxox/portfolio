@@ -4,7 +4,7 @@ export default function AboutContent() {
   return (
     <div>
       <p>
-        Former educator turned self-taught web developer based in Orlando,
+        Former educator turned self-taught Software Engineer based in Orlando,
         Florida. I thrive on building exciting projects that push me beyond my
         comfort zone and fuel continuous growth. My journey from education to
         development has given me a unique perspective on problem-solving and a

@@ -17,7 +17,7 @@ export default function NavBar() {
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link
-            className="flex-none text-xl font-semibold focus:outline-hidden focus:opacity-80"
+            className="flex-none text-sm md:text-lg lg:text-xl font-semibold focus:outline-hidden focus:opacity-80"
             href="/"
             aria-label="Marissa Lamothe Portfolio"
           >
