@@ -21,6 +21,11 @@ export default function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
+    const templateParams = {
+      user_name: `${data.firstName} ${data.lastName}`, // Combine first and last name
+      user_email: data.email,
+      message: data.message,
+    };
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -86,6 +91,9 @@ export default function Contact() {
             type="email"
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           />
+          {errors.email && (
+    <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+  )}
         </div>
 
         <div>
@@ -95,7 +103,7 @@ export default function Contact() {
           <textarea
             {...register('message', { required: 'This is required' })}
             placeholder="Let's work together."
-            rows="4"
+            rows={4}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           />
         </div>
