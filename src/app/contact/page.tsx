@@ -21,6 +21,7 @@ export default function ContactPage() {
             "@type": "Person",
             "name": "Marissa Lamothe",
             "url": "https://www.marissalamothe.dev",
+            "image": "https://www.marissalamothe.dev/marissa.jpg", 
             "jobTitle": "Software Engineer",
             "knowsAbout": ["JavaScript", "React", "Next.js", "TypeScript", "Node.js", 
                           "Express.js", "MongoDB", "SQL", "AWS", "Git", "GitHub", 
