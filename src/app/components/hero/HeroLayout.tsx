@@ -7,7 +7,6 @@ import DownloadIcon from './DownloadIcon';
 import ContactIcon from './ContactIcon';
 
 import FlipCard from './FlipCard';
-import Link from 'next/link';
 
 export default function HeroLayout() {
   return (
