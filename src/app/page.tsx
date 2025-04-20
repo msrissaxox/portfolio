@@ -45,10 +45,10 @@ export default function Page() {
           <div className="p-4 w-full rounded-xl bg-white shadow-lg border border-gray-200 relative overflow-hidden">
             {/* Decorative background element */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 -z-10">
-              test
+             
             </div>
             <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20 -mr-20 -mt-20">
-              test
+             
             </div>
             <TechStackHeader />
             <TechStack />

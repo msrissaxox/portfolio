@@ -3,6 +3,8 @@ import React from 'react';
 import HeroTitle from './HeroTitle';
 import AboutContent from './AboutContent';
 import Button from './Button';
+import ContactButton from './ContactButton';
+
 import FlipCard from './FlipCard';
 
 export default function HeroLayout() {
@@ -16,8 +18,12 @@ export default function HeroLayout() {
           <div className="flex flex-col space-y-6 text-center md:text-left">
             <HeroTitle />
             <AboutContent />
-            <div className="flex justify-items-stretch md:justify-start">
+            {/* <div className="flex justify-items-stretch md:justify-start"> */}
+            {/* <div className="flex flex-col md:flex-row items-stretch md:justify-center gap-2"> */}
+            <div className="flex flex-col md:flex-row items-center md:items-stretch md:justify-center gap-2">
+
               <Button />
+              <ContactButton />
             </div>
           </div>
           {/* <div className="flex justify-center order-first md:order-last mb-8 md:mb-0">
