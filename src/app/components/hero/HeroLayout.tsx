@@ -3,9 +3,11 @@ import React from 'react';
 import HeroTitle from './HeroTitle';
 import AboutContent from './AboutContent';
 import Button from './Button';
-import ContactButton from './ContactButton';
+import DownloadIcon from './DownloadIcon';
+import ContactIcon from './ContactIcon';
 
 import FlipCard from './FlipCard';
+import Link from 'next/link';
 
 export default function HeroLayout() {
   return (
@@ -22,15 +24,14 @@ export default function HeroLayout() {
             {/* <div className="flex flex-col md:flex-row items-stretch md:justify-center gap-2"> */}
             <div className="flex flex-col md:flex-row items-center md:items-stretch md:justify-center gap-2">
 
-              <Button />
-              <ContactButton />
+           
+              <Button text='Download Resume' icon={<DownloadIcon/>} href='/' />
+    
+
+              <Button text='Contact Me' icon={<ContactIcon />} href='/contact'/>
             </div>
           </div>
-          {/* <div className="flex justify-center order-first md:order-last mb-8 md:mb-0">
-          <div className="flex justify-center items-center h-full min-h-[600px] w-full">
-          <FlipCard />
-                </div>
-          </div> */}
+       
           <div className="flex justify-center order-first md:order-last mb-8 md:mb-0">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] flex justify-center items-center">
               <FlipCard />
