@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { useState, useEffect } from 'react';
 import ProjectsHeader from './components/TechStackandActivities/ProjectsHeader';
 import Works from './components/TechStackandActivities/Works';
 import HeroLayout from './components/hero/HeroLayout';
@@ -11,7 +11,28 @@ import MemberBody from './components/TechStackandActivities/MemberBody';
 import Footer from './components/nav/footer/Footer';
 
 
+
 export default function Page() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrolled = document.documentElement.scrollTop;
+        setIsVisible(scrolled > 300); // Show button after scrolling 300px
+      }
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="bg-gray-100">
@@ -46,7 +67,24 @@ export default function Page() {
         <ProjectsHeader />
         <Works />
         <Footer authorName={'Marissa Lamothe'} />
+        </div>
+
+        <button onClick={scrollToTop}
+    style={{
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        display: isVisible ? 'block' : 'none',
+        cursor: 'pointer',
+    }}
+>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+</svg>
+
+
+</button>
       </div>
-    </div>
+    
   );
 }
