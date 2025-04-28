@@ -42,7 +42,6 @@ npm run dev
 - User Input
 The user can navigate the home page, learn more about Marissa Lamothe, and contact her through the contact page
 
-
 - Contact Form
 The contact form is located on another page. The user can route to the contact page through Next.js routing. The user can send a message to Marissa through the contact form. The form utilizes EmailJS and React Hook Form for form submission. The form is then submitted through EmailJS to reach Marissa's inbox directly. The form captures the user's first name, last name, email and message. These are all required fields.  
 
