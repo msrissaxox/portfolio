@@ -94,7 +94,7 @@ export default function NavBar() {
             </Link>
             <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
-              href="#"
+              href="/Marissa_Lamothe_Resume.pdf"
             >
               Resume
             </Link>
