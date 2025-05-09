@@ -5,7 +5,6 @@ import AboutContent from './AboutContent';
 import Button from './Button';
 import DownloadIcon from './DownloadIcon';
 import ContactIcon from './ContactIcon';
-
 import FlipCard from './FlipCard';
 
 export default function HeroLayout() {
@@ -24,7 +23,7 @@ export default function HeroLayout() {
             <div className="flex flex-col md:flex-row items-center md:items-stretch md:justify-center gap-2">
 
            
-              <Button text='Download Resume' icon={<DownloadIcon/>} href='/' />
+              <Button text='Download Resume' icon={<DownloadIcon/>} href='/Marissa_Lamothe_Resume.pdf' />
     
 
               <Button text='Contact Me' icon={<ContactIcon />} href='/contact'/>
