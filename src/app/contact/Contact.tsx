@@ -155,7 +155,7 @@ export default function Contact() {
             type="submit"
             className="w-full bg-green-700 text-white py-2 px-4 rounded-md hover:bg-green-800 transition duration-300"
           >
-            Submit
+            Submit 
           </button>
         </div>
       </form>
