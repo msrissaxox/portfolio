@@ -43,7 +43,7 @@ export default function Contact() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(
-        (result) => {
+        () => {
           // console.log('Email sent successfully:', result.text);
           // alert(
           //   'Thank you for your message! I will get back to you as soon as possible.'
