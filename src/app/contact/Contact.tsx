@@ -3,6 +3,9 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image';
+import BasicModal from './Modal';
+
+
 
 type Inputs = {
   firstName: string;
@@ -12,12 +15,14 @@ type Inputs = {
 };
 
 export default function Contact() {
+  const [modalOpen, setModalOpen] = React.useState(false);
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm<Inputs>();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log('Form data:', data); // Debug: Log the form data
 
@@ -39,10 +44,11 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log('Email sent successfully:', result.text);
-          alert(
-            'Thank you for your message! I will get back to you as soon as possible.'
-          );
+          // console.log('Email sent successfully:', result.text);
+          // alert(
+          //   'Thank you for your message! I will get back to you as soon as possible.'
+          // );
+          setModalOpen(true); // Open the modal
           reset();
         },
         (error) => {
@@ -153,6 +159,10 @@ export default function Contact() {
           </button>
         </div>
       </form>
+      <BasicModal
+        open={modalOpen} onClose={() => setModalOpen(false)}
+      />
+  
     </div>
   );
 }
