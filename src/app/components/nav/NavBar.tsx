@@ -80,26 +80,29 @@ export default function NavBar() {
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
             <Link
-              className="font-medium text-green-700 focus:outline-hidden"
+              className="font-medium text-green-700 focus:outline-none"
               href="/"
               aria-current="page"
             >
               Home
             </Link>
             <Link
-              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
+              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400"
               href="/#works"
             >
               Works
             </Link>
             <Link
-              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
+              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400"
               href="/Marissa_Lamothe_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download={true}
             >
               Resume
             </Link>
             <Link
-              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400"
+              className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400"
               href="/contact"
             >
               Contact Me
