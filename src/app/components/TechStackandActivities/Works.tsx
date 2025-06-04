@@ -61,11 +61,11 @@ export default function Works() {
             altText="Golden Light Designs gif"
           />
         </a>
-        <TiltedCard
+        {/* <TiltedCard
           imageSrc="/comingsoon.png"
           overlayContent="Coming Soon"
           altText="Coming Soon image"
-        />
+        /> */}
       </div>
     </div>
   );

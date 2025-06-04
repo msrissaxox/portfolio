@@ -8,17 +8,19 @@ interface ButtonProps {
   onClick?: () => void; // Optional, only used for non-link buttons
 }
 
-export default function Button({ text, icon, href, onClick }: ButtonProps) {
+export default function Button({ text, icon, href, onClick, download, ...rest }: ButtonProps) {
   // If `href` is provided, render a link
-  if (href) {
+  if (href && download) {
     return (
-      <Link
-        href={href}
+      <a
+      href={href} 
+      download={download}
+         {...rest}
           className="flex w-full items-center justify-center gap-2 rounded-2xl bg-green-700 text-amber-100 p-5 py-3 mx-1 font-semibold hover:bg-green-800 transition"
         >
           <span>{text}</span>
           {icon}
-      </Link>
+          </a>
     );
   }  
   // Otherwise, render a button

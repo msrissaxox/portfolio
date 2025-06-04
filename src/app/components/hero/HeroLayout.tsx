@@ -25,6 +25,7 @@ export default function HeroLayout() {
                 text="Download Resume"
                 icon={<DownloadIcon />}
                 href="/Marissa_Lamothe_Resume.pdf"
+                download
               />
 
               <Button
