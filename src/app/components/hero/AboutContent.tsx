@@ -7,7 +7,7 @@ export default function AboutContent() {
         I am a former educator turned self-taught Software Engineer based in
         Orlando, Florida. My journey from education to development has given me
         a unique perspective on problem-solving and a passion for creating
-        intuitive, user-focused experiences. I've recently gained experience
+        intuitive, user-focused experiences. I&apos;ve recently gained experience
         working within a team of developers in an agile environment. This has
         allowed me to explore collaborative coding practices, version control
         with Git, and the intricacies of working on larger projects. I enjoy the
