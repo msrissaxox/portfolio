@@ -21,15 +21,20 @@ export default function HeroLayout() {
             {/* <div className="flex justify-items-stretch md:justify-start"> */}
             {/* <div className="flex flex-col md:flex-row items-stretch md:justify-center gap-2"> */}
             <div className="flex flex-col md:flex-row items-center md:items-stretch md:justify-center gap-2">
+              <Button
+                text="Download Resume"
+                icon={<DownloadIcon />}
+                href="/Marissa_Lamothe_Resume.pdf"
+              />
 
-           
-              <Button text='Download Resume' icon={<DownloadIcon/>} href='/Marissa_Lamothe_Resume.pdf' />
-    
-
-              <Button text='Contact Me' icon={<ContactIcon />} href='/contact'/>
+              <Button
+                text="Contact Me"
+                icon={<ContactIcon />}
+                href="/contact"
+              />
             </div>
           </div>
-       
+
           <div className="flex justify-center order-first md:order-last mb-8 md:mb-0">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] flex justify-center items-center">
               <FlipCard />

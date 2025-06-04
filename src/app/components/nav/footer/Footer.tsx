@@ -7,13 +7,13 @@ export default function Footer({ authorName }: { authorName: string }) {
     <footer className="w-full text-center py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <a href="https://pagedone.io/" className="flex justify-center "></a>
 
           <div className="flex space-x-10 justify-center items-center mb-5">
             <a
               href="https://github.com/msrissaxox"
               className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
               target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 className="w-[1.688rem] h-[1.688rem]"
@@ -28,6 +28,7 @@ export default function Footer({ authorName }: { authorName: string }) {
               href="https://www.linkedin.com/in/marissalamothe/"
               className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
               target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 className="w-[1.688rem] h-[1.688rem]"

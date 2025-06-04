@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import './flipcard.css'; // Import the CSS file for styles
 
 const FlipCard = () => {
-  const [flippedOnce, setFlippedOnce] = React.useState(false);
+  const [flippedOnce, setFlippedOnce] = useState(false);
 
   useEffect(() => {
     //flip once on load

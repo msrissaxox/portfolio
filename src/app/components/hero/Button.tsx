@@ -7,6 +7,7 @@ interface ButtonProps {
   href?: string; // Optional, only required if the button is a link
   onClick?: () => void; // Optional, only used for non-link buttons
 }
+
 export default function Button({ text, icon, href, onClick }: ButtonProps) {
   // If `href` is provided, render a link
   if (href) {

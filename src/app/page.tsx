@@ -10,28 +10,26 @@ import MemberHeader from './components/TechStackandActivities/MemberHeader';
 import MemberBody from './components/TechStackandActivities/MemberBody';
 import Footer from './components/nav/footer/Footer';
 
-
-
 export default function Page() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrolled = document.documentElement.scrollTop;
-        setIsVisible(scrolled > 300); // Show button after scrolling 300px
-      }
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      }
-    }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = document.documentElement.scrollTop;
+      setIsVisible(scrolled > 300); // Show button after scrolling 300px
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
@@ -44,12 +42,8 @@ export default function Page() {
           {/* Tech Stack Section */}
           <div className="p-4 w-full rounded-xl bg-white shadow-lg border border-gray-200 relative overflow-hidden">
             {/* Decorative background element */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 -z-10">
-             
-            </div>
-            <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20 -mr-20 -mt-20">
-             
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50 -z-10"></div>
+            <div className="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
             <TechStackHeader />
             <TechStack />
           </div>
@@ -67,24 +61,33 @@ export default function Page() {
         <ProjectsHeader />
         <Works />
         <Footer authorName={'Marissa Lamothe'} />
-        </div>
-
-        <button onClick={scrollToTop}
-    style={{
-        position: 'fixed',
-        bottom: '20px',
-        right: '20px',
-        display: isVisible ? 'block' : 'none',
-        cursor: 'pointer',
-    }}
->
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-</svg>
-
-
-</button>
       </div>
-    
+
+      <button
+        onClick={scrollToTop}
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          display: isVisible ? 'block' : 'none',
+          cursor: 'pointer',
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+          />
+        </svg>
+      </button>
+    </div>
   );
 }

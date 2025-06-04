@@ -1,5 +1,4 @@
 import React from 'react';
-import type { SpringOptions } from 'framer-motion';
 
 export default function AboutContent() {
   return (
