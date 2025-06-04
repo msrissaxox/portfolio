@@ -97,7 +97,7 @@ export default function NavBar() {
               href="/Marissa_Lamothe_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download={true}
+              // download={true}
             >
               Resume
             </Link>
