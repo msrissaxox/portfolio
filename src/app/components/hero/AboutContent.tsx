@@ -12,11 +12,12 @@ export default function AboutContent() {
         allowed me to explore collaborative coding practices, version control
         with Git, and the intricacies of working on larger projects. I enjoy the
         challenge of tackling complex problems and finding elegant solutions
-        that enhance user experience alongside a team. <br />
+        that enhance user experience alongside a team. <br /><br />
         I specialize in <b>JavaScript</b>,{' '}
         <b>React</b>, <b>Node.js</b>, <b>Next.js</b>, and <b>SQL</b>, while
         constantly exploring new libraries and staying current with the latest
-        web development trends. <br />
+        web development trends. I am also experienced with Shopify Development, and 
+        work with business owners to help bring their visions to life. <br /> <br />
          One of my recent projects, the{' '}
         <b>LinkedIn Post Generator</b>, showcases how I leveraged <b>OpenAI</b>{' '}
         to automate content creation, demonstrating my ability to integrate

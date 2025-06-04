@@ -5,8 +5,6 @@ import emailjs from '@emailjs/browser';
 import Image from 'next/image';
 import BasicModal from './Modal';
 
-
-
 type Inputs = {
   firstName: string;
   lastName: string;
@@ -32,9 +30,9 @@ export default function Contact() {
       email: data.email,
       message: data.message,
     };
-    
+
     console.log('Sending email with data:', templateParams);
-   
+
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -62,7 +60,7 @@ export default function Contact() {
     <div className="flex flex-col items-center justify-center gap-5 bg-gray-100 p-6 md:flex-row md:gap-10 md:p-10">
       <Image
         src="/contactme.png"
-        alt="Logo"
+        alt="Contact Logo"
         width={320}
         height={250}
         className="mb-4"
@@ -155,14 +153,11 @@ export default function Contact() {
             type="submit"
             className="w-full bg-green-700 text-white py-2 px-4 rounded-md hover:bg-green-800 transition duration-300"
           >
-            Submit 
+            Submit
           </button>
         </div>
       </form>
-      <BasicModal
-        open={modalOpen} onClose={() => setModalOpen(false)}
-      />
-  
+      <BasicModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </div>
   );
 }
