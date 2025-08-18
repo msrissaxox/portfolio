@@ -42,10 +42,6 @@ export default function Contact() {
       )
       .then(
         () => {
-          // console.log('Email sent successfully:', result.text);
-          // alert(
-          //   'Thank you for your message! I will get back to you as soon as possible.'
-          // );
           setModalOpen(true); // Open the modal
           reset();
         },
