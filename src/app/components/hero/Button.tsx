@@ -6,7 +6,7 @@ interface ButtonProps {
   icon: React.ReactNode;
   href?: string; // Optional, only required if the button is a link
   onClick?: () => void; // Optional, only used for non-link buttons
-  download?: boolean | string; // <-- Add this line
+  download?: boolean | string;  // <-- Add this line
 
 }
 
