@@ -49,4 +49,4 @@ The contact form is located on another page. The user can route to the contact p
 If an error occurs, it is logged, and an appropriate message is shown to the user.
 
 - Deployment
-Deployment handled through Vercel.
+Deployment handled through AWS.
