@@ -19,15 +19,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Marissa Lamothe | Software Engineer',
-  description: 'Experienced software engineer specializing in React, TypeScript, Node.js, and more.',
-  keywords: 'Marissa Lamothe, software engineer, orlando developer, orlando software engineer, orlando react developer, orlando javascript developer, orlando typescript developer, web developer, full stack developer, React developer, Next.js developer, JavaScript engineer, TypeScript developer, hire developer, MongoDB, SQL, Node.js, Express.js, TailwindCSS, Vercel, Netlify, AWS, Git, GitHub',
+  description:
+    'Experienced software engineer specializing in React, TypeScript, Node.js, and more.',
+  keywords:
+    'Marissa Lamothe, software engineer, orlando developer, orlando software engineer, orlando react developer, orlando javascript developer, orlando typescript developer, web developer, full stack developer, React developer, Next.js developer, JavaScript engineer, TypeScript developer, hire developer, MongoDB, SQL, Node.js, Express.js, TailwindCSS, Vercel, Netlify, AWS, Git, GitHub',
   openGraph: {
     title: 'Marissa Lamothe | Software Engineer for Hire',
-    description: 'Full stack software engineer specializing in modern web technologies. View my portfolio and experience.',
+    description:
+      'Full stack software engineer specializing in modern web technologies. View my portfolio and experience.',
     url: 'https://www.marissalamothe.dev',
     siteName: 'Marissa Lamothe - Software Engineer Portfolio',
-
-    
   },
 
   robots: {
@@ -44,10 +45,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-}
-
-
-;
+};
 
 export default function RootLayout({
   children,

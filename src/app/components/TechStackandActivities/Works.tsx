@@ -57,17 +57,17 @@ export default function Works() {
 
 
 
-        {/* <a
-          href="https://github.com/msrissaxox/fruits-frontend/tree/main/#readme"
+        <a
+          href="https://github.com/msrissaxox/gitmystic/tree/main/#readme"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TiltedCard
-            imageSrc="/fruitfinder.gif"
-            overlayContent="Fruit Finder API"
-            altText="Fruit Finder API gif"
+            imageSrc="/gitmystic.gif"
+            overlayContent="Git Mystic"
+            altText="GitMystic gif"
           />
-        </a> */}
+        </a>
 
         <a
           href="https://www.goldenlightdesigns.co"
